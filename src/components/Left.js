@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './left.css';
+import Tooltip from './ToolTip';
 
 export default function Left() {
   const [formData, setFormData] = useState({
@@ -39,6 +40,9 @@ export default function Left() {
             id='targetElement'
             onChange={handleChange}
           >
+            <option value='Select target Element' className='input-boxes'>
+              Select Target Element
+            </option>
             <option value='Button1' className='input-boxes'>
               Button 1
             </option>
@@ -202,30 +206,16 @@ export default function Left() {
         <div className='wrapper-right'>
           <div className='first'>
             <div className='btn-bgcolor'>Button 1</div>
-            {formData.targetElement === 'Button1' && (
-              <div className='tooltip'>{formData.tooltipText}</div>
-            )}
             <div className='btn-bgcolor'>Button 2</div>
-            {formData.targetElement === 'Button2' && (
-              <div className='tooltip'>{formData.tooltipText}</div>
-            )}
           </div>
           <div className='second'>
             <div className='btn-bgcolor'>Button 3</div>
-            {formData.targetElement === 'Button3' && (
-              <div className='tooltip'>{formData.tooltipText}</div>
-            )}
           </div>
           <div className='third'>
             <div className='btn-bgcolor'>Button 4</div>
-            {formData.targetElement === 'Button4' && (
-              <div className='tooltip'>{formData.tooltipText}</div>
-            )}
             <div className='btn-bgcolor'>Button 5</div>
-            {formData.targetElement === 'Button5' && (
-              <div className='tooltip'>{formData.tooltipText}</div>
-            )}
           </div>
+          <Tooltip props={formData} />
         </div>
       </div>
     </>

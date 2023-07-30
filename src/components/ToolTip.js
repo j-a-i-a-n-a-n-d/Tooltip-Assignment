@@ -1,11 +1,21 @@
 import React from 'react';
 import './tooltip.css';
+import triangle from '../assets/traingle1.png';
 
-const Tooltip = (props) => {
+const Tooltip = ({ data, hoveredButton }) => {
+  console.log(data);
+  console.log(hoveredButton);
   return (
-    <div className='ToolTip'>
-      <div>hello</div>
-    </div>
+    <>
+      {data.targetElement === hoveredButton && (
+        <div className='ToolTip'>
+          <div>
+            <img src={triangle} alt='' />
+            {data.tooltipText}
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

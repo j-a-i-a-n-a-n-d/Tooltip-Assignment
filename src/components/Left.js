@@ -70,27 +70,38 @@ export default function Left() {
           />
         </div>
         <div className='textsize-padding'>
-          <label className='bold' htmlFor='textSize'>
-            Text Size :
-          </label>
-          <label className='bold' htmlFor='padding'>
-            Padding :
-          </label>
-          <br />
-          <input
-            type='number'
-            id='textSize'
-            name='textSize'
-            onChange={handleChange}
-            className='input-boxes'
-          />
-          <input
-            type='number'
-            id='padding'
-            name='padding'
-            onChange={handleChange}
-            className='input-boxes'
-          />
+          <div className='multi-use'>
+            <div>
+              <label className='bold' htmlFor='textSize'>
+                Text Size :
+              </label>
+              <br />
+              <input
+                type='number'
+                id='textSize'
+                name='textSize'
+                onChange={handleChange}
+                className='input-boxes input-boxes-adv'
+                min='0'
+                step='1'
+              />
+            </div>
+            <div>
+              <label className='bold' htmlFor='padding'>
+                Padding :
+              </label>
+              <br />
+              <input
+                type='number'
+                id='padding'
+                name='padding'
+                onChange={handleChange}
+                className='input-boxes input-boxes-adv'
+                min='0'
+                step='1'
+              />
+            </div>
+          </div>
         </div>
         <div className='text-color'>
           <label className='bold' htmlFor='textColor'>
@@ -119,55 +130,71 @@ export default function Left() {
           />
         </div>
         <div className='radius-tooltip'>
-          <div>
-            <label htmlFor='radius' className='bold'>
-              Radius :
-            </label>
-            <label htmlFor='tooltip' className='bold'>
-              Tooltip :
-            </label>
-          </div>
-          <div>
-            <input
-              type='number'
-              id='radius'
-              name='cornerRadius'
-              onChange={handleChange}
-              className='input-boxes'
-            />
-            <input
-              type='number'
-              id='tooltip'
-              name='tooltipWidth'
-              onChange={handleChange}
-              className='input-boxes'
-            />
+          <div className='multi-use'>
+            <div>
+              <label htmlFor='radius' className='bold'>
+                Radius :
+              </label>
+              <br />
+              <input
+                type='number'
+                id='radius'
+                name='cornerRadius'
+                onChange={handleChange}
+                className='input-boxes input-boxes-adv'
+                min='0'
+                step='1'
+              />
+            </div>
+            <div>
+              <label htmlFor='tooltip' className='bold'>
+                Tooltip Width:
+              </label>
+              <br />
+              <input
+                type='number'
+                id='tooltip'
+                name='tooltipWidth'
+                onChange={handleChange}
+                className='input-boxes input-boxes-adv'
+                min='0'
+                step='1'
+              />
+            </div>
           </div>
         </div>
         <div className='arrow-width-height'>
-          <div>
-            <label htmlFor='arrowWidth' className='bold'>
-              Arrow Width :
-            </label>
-            <label htmlFor='arrowHeight' className='bold'>
-              Arrow Height :
-            </label>
-          </div>
-          <div>
-            <input
-              type='number'
-              id='arrowWidth'
-              name='arrowWidth'
-              onChange={handleChange}
-              className='input-boxes'
-            />
-            <input
-              type='number'
-              id='arrowHeight'
-              name='arrowHeight'
-              onChange={handleChange}
-              className='input-boxes'
-            />
+          <div className='multi-use'>
+            <div>
+              <label htmlFor='arrowWidth' className='bold'>
+                Arrow Width :
+              </label>
+              <br />
+              <input
+                type='number'
+                id='arrowWidth'
+                name='arrowWidth'
+                onChange={handleChange}
+                className='input-boxes input-boxes-adv'
+                min='0'
+                step='1'
+              />
+            </div>
+            <div>
+              <label htmlFor='arrowHeight' className='bold'>
+                Arrow Height :
+              </label>
+              <br />
+              <input
+                type='number'
+                id='arrowHeight'
+                name='arrowHeight'
+                onChange={handleChange}
+                className='input-boxes input-boxes-adv'
+                min='0'
+                step='1'
+              />
+            </div>
           </div>
         </div>
       </div>

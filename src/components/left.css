@@ -48,9 +48,9 @@
   padding: 5px 10px;
   border-radius: 4px;
   margin: 15px;
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .bold {
   font-weight: 700;
@@ -60,4 +60,16 @@
   height: 30px;
   border-radius: 4px;
   border: 1px #d9d9d9 solid;
+}
+.input-boxes:focus {
+  outline: none;
+  border: 1px #acacac solid;
+}
+.multi-use {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 100px; */
+}
+.input-boxes-adv {
+  width: 350px !important;
 }

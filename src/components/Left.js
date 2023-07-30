@@ -126,31 +126,33 @@ export default function Left() {
         </div>
       </div>
       <div className='Right'>
-        <div className='first'>
-          <div>Button 1</div>
-          {formData.targetElement === 'Button1' && (
-            <div className='tooltip'>{formData.tooltipText}</div>
-          )}
-          <div>Button 2</div>
-          {formData.targetElement === 'Button2' && (
-            <div className='tooltip'>{formData.tooltipText}</div>
-          )}
-        </div>
-        <div className='second'>
-          <div className=''>Button 3</div>
-          {formData.targetElement === 'Button3' && (
-            <div className='tooltip'>{formData.tooltipText}</div>
-          )}
-        </div>
-        <div className='third'>
-          <div>Button 4</div>
-          {formData.targetElement === 'Button4' && (
-            <div className='tooltip'>{formData.tooltipText}</div>
-          )}
-          <div>Button 5</div>
-          {formData.targetElement === 'Button5' && (
-            <div className='tooltip'>{formData.tooltipText}</div>
-          )}
+        <div className='wrapper-right'>
+          <div className='first'>
+            <div className='btn-bgcolor'>Button 1</div>
+            {formData.targetElement === 'Button1' && (
+              <div className='tooltip'>{formData.tooltipText}</div>
+            )}
+            <div className='btn-bgcolor'>Button 2</div>
+            {formData.targetElement === 'Button2' && (
+              <div className='tooltip'>{formData.tooltipText}</div>
+            )}
+          </div>
+          <div className='second'>
+            <div className='btn-bgcolor'>Button 3</div>
+            {formData.targetElement === 'Button3' && (
+              <div className='tooltip'>{formData.tooltipText}</div>
+            )}
+          </div>
+          <div className='third'>
+            <div className='btn-bgcolor'>Button 4</div>
+            {formData.targetElement === 'Button4' && (
+              <div className='tooltip'>{formData.tooltipText}</div>
+            )}
+            <div className='btn-bgcolor'>Button 5</div>
+            {formData.targetElement === 'Button5' && (
+              <div className='tooltip'>{formData.tooltipText}</div>
+            )}
+          </div>
         </div>
       </div>
     </>

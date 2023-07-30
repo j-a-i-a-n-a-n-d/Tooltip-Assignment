@@ -29,100 +29,146 @@ export default function Left() {
     <>
       <div className='Left'>
         <div className='target-element'>
-          <label htmlFor='targetElement'>Target Element :</label>
+          <label className='bold' htmlFor='targetElement'>
+            Target Element :
+          </label>
           <br />
           <select
+            className='input-boxes'
             name='targetElement'
             id='targetElement'
             onChange={handleChange}
           >
-            <option value='Button1'>Button 1</option>
-            <option value='Button2'>Button 2</option>
-            <option value='Button3'>Button 3</option>
-            <option value='Button4'>Button 4</option>
-            <option value='Button5'>Button 5</option>
+            <option value='Button1' className='input-boxes'>
+              Button 1
+            </option>
+            <option value='Button2' className='input-boxes'>
+              Button 2
+            </option>
+            <option value='Button3' className='input-boxes'>
+              Button 3
+            </option>
+            <option value='Button4' className='input-boxes'>
+              Button 4
+            </option>
+            <option value='Button5' className='input-boxes'>
+              Button 5
+            </option>
           </select>
         </div>
         <div className='tooltip-text'>
-          <label htmlFor='tooltipText'>Tooltip Text :</label>
+          <label className='bold' htmlFor='tooltipText'>
+            Tooltip Text :
+          </label>
           <br />
           <input
             type='text'
             id='tooltipText'
             name='tooltipText'
             onChange={handleChange}
+            className='input-boxes'
           />
         </div>
         <div className='textsize-padding'>
-          <label htmlFor='textSize'>Text Size :</label>
-          <label htmlFor='padding'>Padding :</label>
+          <label className='bold' htmlFor='textSize'>
+            Text Size :
+          </label>
+          <label className='bold' htmlFor='padding'>
+            Padding :
+          </label>
           <br />
           <input
             type='number'
             id='textSize'
             name='textSize'
             onChange={handleChange}
+            className='input-boxes'
           />
           <input
             type='number'
             id='padding'
             name='padding'
             onChange={handleChange}
+            className='input-boxes'
           />
         </div>
         <div className='text-color'>
-          <label htmlFor='textColor'>Text Color :</label>
+          <label className='bold' htmlFor='textColor'>
+            Text Color :
+          </label>
           <br />
           <input
             type='text'
             id='textColor'
             name='textColor'
             onChange={handleChange}
+            className='input-boxes'
           />
         </div>
         <div className='background-color'>
-          <label htmlFor='backgroundColor'>Background Color :</label>
+          <label className='bold' htmlFor='backgroundColor'>
+            Background Color :
+          </label>
           <br />
           <input
             type='text'
             id='backgroundColor'
             name='backgroundColor'
             onChange={handleChange}
+            className='input-boxes'
           />
         </div>
         <div className='radius-tooltip'>
-          <label htmlFor='radius'>Radius :</label>
-          <label htmlFor='tooltip'>Tooltip :</label>
-          <br />
-          <input
-            type='number'
-            id='radius'
-            name='cornerRadius'
-            onChange={handleChange}
-          />
-          <input
-            type='number'
-            id='tooltip'
-            name='tooltipWidth'
-            onChange={handleChange}
-          />
+          <div>
+            <label htmlFor='radius' className='bold'>
+              Radius :
+            </label>
+            <label htmlFor='tooltip' className='bold'>
+              Tooltip :
+            </label>
+          </div>
+          <div>
+            <input
+              type='number'
+              id='radius'
+              name='cornerRadius'
+              onChange={handleChange}
+              className='input-boxes'
+            />
+            <input
+              type='number'
+              id='tooltip'
+              name='tooltipWidth'
+              onChange={handleChange}
+              className='input-boxes'
+            />
+          </div>
         </div>
         <div className='arrow-width-height'>
-          <label htmlFor='arrowWidth'>Arrow Width :</label>
-          <label htmlFor='arrowHeight'>Arrow Height :</label>
-          <br />
-          <input
-            type='number'
-            id='arrowWidth'
-            name='arrowWidth'
-            onChange={handleChange}
-          />
-          <input
-            type='number'
-            id='arrowHeight'
-            name='arrowHeight'
-            onChange={handleChange}
-          />
+          <div>
+            <label htmlFor='arrowWidth' className='bold'>
+              Arrow Width :
+            </label>
+            <label htmlFor='arrowHeight' className='bold'>
+              Arrow Height :
+            </label>
+          </div>
+          <div>
+            <input
+              type='number'
+              id='arrowWidth'
+              name='arrowWidth'
+              onChange={handleChange}
+              className='input-boxes'
+            />
+            <input
+              type='number'
+              id='arrowHeight'
+              name='arrowHeight'
+              onChange={handleChange}
+              className='input-boxes'
+            />
+          </div>
         </div>
       </div>
       <div className='Right'>

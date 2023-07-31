@@ -16,61 +16,73 @@ export default function Right(props) {
     arrowHeight: props.props.arrowHeight,
   };
 
-  const [showTooltip, setShowTooltip] = useState(false);
-  const [hoveredButton, setHoveredButton] = useState('');
-  const handleButtonHover = (buttonText, isHovering) => {
-    setShowTooltip(isHovering);
-    setHoveredButton(isHovering ? buttonText : '');
-  };
-
   return (
     <>
       <div className='Right'>
         <div className='wrapper-right'>
           <div className='first'>
-            <div
-              className='btn-bgcolor'
-              onMouseEnter={() => handleButtonHover('Button1', true)}
-              onMouseLeave={() => handleButtonHover('Button1', false)}
-            >
-              Button 1
+            <div className='btn-bgcolor'>
+              <Tooltip
+                content={props.props.tooltipText}
+                direction='bottom'
+                textSize={props.props.textSize}
+                data={formData}
+              >
+                Button1
+              </Tooltip>
             </div>
-            <div
-              className='btn-bgcolor'
-              onMouseEnter={() => handleButtonHover('Button2', true)}
-              onMouseLeave={() => handleButtonHover('Button2', false)}
-            >
-              Button 2
+            <div className='btn-bgcolor'>
+              <Tooltip
+                content={props.props.tooltipText}
+                direction='bottom'
+                textSize={props.props.textSize}
+                data={formData}
+              >
+                Button2
+              </Tooltip>
             </div>
           </div>
           <div className='second'>
-            <div
-              className='btn-bgcolor'
-              onMouseEnter={() => handleButtonHover('Button3', true)}
-              onMouseLeave={() => handleButtonHover('Button3', false)}
-            >
-              Button 3
+            <div className='btn-bgcolor'>
+              <Tooltip
+                content={props.props.tooltipText}
+                direction='bottom'
+                textSize={props.props.textSize}
+                data={formData}
+              >
+                Button3
+              </Tooltip>
             </div>
           </div>
           <div className='third'>
-            <div
-              className='btn-bgcolor'
-              onMouseEnter={() => handleButtonHover('Button4', true)}
-              onMouseLeave={() => handleButtonHover('Button4', false)}
-            >
-              Button 4
+            <div className='btn-bgcolor'>
+              <Tooltip
+                content={props.props.tooltipText}
+                direction='top'
+                textSize={props.props.textSize}
+                data={formData}
+              >
+                Button4
+              </Tooltip>
             </div>
-            <div
-              className='btn-bgcolor'
-              onMouseEnter={() => handleButtonHover('Button5', true)}
-              onMouseLeave={() => handleButtonHover('Button5', false)}
-            >
-              Button 5
+            <div className='btn-bgcolor'>
+              <Tooltip
+                content={props.props.tooltipText}
+                direction='top'
+                textSize={props.props.textSize}
+                data={formData}
+              >
+                Button5
+              </Tooltip>
             </div>
           </div>
-          {showTooltip && (
-            <Tooltip data={formData} hoveredButton={hoveredButton} />
-          )}
+          {/* {showTooltip && (
+            <Tooltip
+              formdata={formData}
+              hoveredButton={hoveredButton}
+              textSize={formData.textSize}
+            />
+          )} */}
         </div>
       </div>
     </>

@@ -33,6 +33,14 @@ export default function Right(props) {
                 content={props.props.tooltipText} 
                 direction="bottom"
                 textSize={props.props.textSize} // Pass textSize prop here
+                padding= {props.props.padding}
+                textColor= {props.props.textColor}
+                backgroundColor= {props.props.backgroundColor}
+                cornerRadius= {props.props.cornerRadius}
+                tooltipWidth= {props.props.tooltipWidth}
+                arrowWidth={props.props.arrowWidth}
+                arrowHeight={props.props.arrowHeight}
+
               >
                 Button 1
               </Tooltip>
